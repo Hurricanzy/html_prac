@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Список самых популярных животных
+	</title>
+</head>
+<body>
+<p>
+	<a href="list_1.html">Самые популярные животные</a><br>
+	<b><big><a href="list_2.html">Список самых популярных животных</a></big></b>
+</p>
+<hr>
+<details>
+	<summary>График</summary>
+	<form>
+	<table>
+		<thead>
+		<tr>
+			<th>Значение по оси OX</th>
+			<th>Результат</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>
+				<input type="radio"> Класс<br>
+				<input type="radio"> Ареал обитания<br>
+				<input type="radio"> Охранный статус
+			</td>
+			<td>
+				<input type="checkbox"> Максимальный средний вес<br>
+				<input type="checkbox"> Минимальная продолжительность жизни<br>
+				<input type="checkbox"> Количество видов
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<input type="submit" value="Построить">
+	</form>
+	<p>Здесь будет график</p>
+</details>
+<details>
+	<summary>Фильтр</summary>
+	<form>
+		<p>
+			<label for="name">Название: </label><input type="text" id="name">
+		</p>
+		<p>
+			<label for="class">Класс: </label><input type="text" id="class">
+		</p>
+		<p>
+			<label for="habitat">Ареал обитания: </label><input type="text" id="habitat">
+		</p>
+		<p>
+			<label for="weight">Средний вес, кг: </label><input type="text" id="weight">
+		</p>
+		<p>
+			<label>
+				Продолжительность жизни, лет: от <input type="text">
+			</label>
+			<label>
+				до <input type="text">
+			</label>
+		</p>
+		<input type="submit" value="Найти">
+	</form>
+</details>
+<details>
+	<summary>Сортировка</summary>
+	<form>
+		<p>
+			<label>
+			Первый уровень:
+				<select name="sort1">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort1_desc">
+			</label>
+		</p>
+		<p>
+			<label>
+				Второй уровень:
+				<select name="sort2">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort2_desc">
+			</label>
+		</p>
+		<p>
+			<label>
+				Второй уровень:
+				<select name="sort3">
+					<option>Нет</option>
+					<option>Название</option>
+					<option>Класс</option>
+					<option>Средний вес, кг</option>
+					<option>Продолжительность жизни, лет</option>
+				</select>
+			</label>
+			<label>
+				по убыванию? <input type="checkbox" name="sort3_desc">
+			</label>
+		</p>
+		<input type="submit" value="Сортировать">
+	</form>
+</details>
+<table border="1" cellspacing="0" cellpadding="5">
+	<thead align="center">
+	<tr>
+		<th>Название</th>
+		<th>Класс</th>
+		<th>Ареал обитания</th>
+		<th>Средний вес, кг</th>
+		<th>Продолжительность жизни, лет</th>
+		<th>Статус по Красной книге</th>
+	</tr>
+	</thead>
+	<tbody valign="top">
+	<tr>
+		<td>Амурский тигр</td>
+		<td>Млекопитающее</td>
+		<td>Дальний Восток России, Китай</td>
+		<td>100–300</td>
+		<td>15–20</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	<tr>
+		<td>Снежный барс (Ирбис)</td>
+		<td>Млекопитающее</td>
+		<td>Горные районы Центральной Азии</td>
+		<td>35–55</td>
+		<td>15–18</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Дальневосточный леопард</td>
+		<td>Млекопитающее</td>
+		<td>Приморский край, Китай</td>
+		<td>30–60</td>
+		<td>12–15</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	<tr>
+		<td>Красный волк</td>
+		<td>Млекопитающее</td>
+		<td>Южная и Восточная Азия</td>
+		<td>15–20</td>
+		<td>8–10</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	<tr>
+		<td>Белый медведь</td>
+		<td>Млекопитающее</td>
+		<td>Арктика</td>
+		<td>300–600</td>
+		<td>20–25</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Европейский зубр</td>
+		<td>Млекопитающее</td>
+		<td>Европа (лесные массивы)</td>
+		<td>400–900</td>
+		<td>20–25</td>
+		<td>Восстанавливающийся вид</td>
+	</tr>
+	<tr>
+		<td>Большая панда</td>
+		<td>Млекопитающее</td>
+		<td>Китай</td>
+		<td>70–120</td>
+		<td>20</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Сайгак</td>
+		<td>Млекопитающее</td>
+		<td>Степи Казахстана, России, Монголии</td>
+		<td>20–40</td>
+		<td>10–12</td>
+		<td>Вымирающий</td>
+	</tr>
+	<tr>
+		<td>Чёрный журавль</td>
+		<td>Птица</td>
+		<td>Северо-Восточная Азия</td>
+		<td>4–6</td>
+		<td>20–30</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Краснозобая казарка</td>
+		<td>Птица</td>
+		<td>Россия, Восточная Европа</td>
+		<td>1,5–2</td>
+		<td>12–15</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Осётр атлантический</td>
+		<td>Рыба</td>
+		<td>Атлантический океан, реки Европы</td>
+		<td>до 200</td>
+		<td>50–60</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	<tr>
+		<td>Стерх</td>
+		<td>Птица</td>
+		<td>Сибирь, Якутия</td>
+		<td>5–7</td>
+		<td>20–30</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	<tr>
+		<td>Африканский слон</td>
+		<td>Млекопитающее</td>
+		<td>Африка</td>
+		<td>4000–6000</td>
+		<td>60–70</td>
+		<td>Уязвимый</td>
+	</tr>
+	<tr>
+		<td>Галапагосская черепаха</td>
+		<td>Пресмыкающееся</td>
+		<td>Галапагосские острова</td>
+		<td>100–250</td>
+		<td>100–150</td>
+		<td>Вымирающий</td>
+	</tr>
+	<tr>
+		<td>Яванский носорог</td>
+		<td>Млекопитающее</td>
+		<td>Индонезия</td>
+		<td>900–2300</td>
+		<td>30–45</td>
+		<td>На грани исчезновения</td>
+	</tr>
+	</tbody>
+</table>
+
+</body>
+</html>
