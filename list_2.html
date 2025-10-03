@@ -13,35 +13,32 @@
 	<b><a href="list_2.html">Список самых популярных животных</a></b>
 </p>
 <hr>
+
 <details>
-	<summary>График</summary>
-	<form>
-	<table>
-		<thead>
-		<tr>
-			<th>Значение по оси OX</th>
-			<th>Результат</th>
-		</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>
-				<input type="radio"> Класс<br>
-				<input type="radio"> Ареал обитания<br>
-				<input type="radio"> Охранный статус
-			</td>
-			<td>
-				<input type="checkbox"> Максимальный средний вес<br>
-				<input type="checkbox"> Минимальная продолжительность жизни<br>
-				<input type="checkbox"> Количество видов
-			</td>
-		</tr>
-		</tbody>
-	</table>
-	<input type="submit" value="Построить">
-	</form>
-	<p>Здесь будет график</p>
+  <summary>График</summary>
+  <form>
+    <h3>Значение по оси OX</h3>
+    <p>
+      <label><input type="radio" name="ox"> Класс</label><br>
+      <label><input type="radio" name="ox"> Ареал обитания</label><br>
+      <label><input type="radio" name="ox"> Охранный статус</label>
+    </p>
+
+    <h3>Результат</h3>
+    <p>
+      <label><input type="checkbox" name="result"> Максимальный средний вес</label><br>
+      <label><input type="checkbox" name="result"> Минимальная продолжительность жизни</label><br>
+      <label><input type="checkbox" name="result"> Количество видов</label>
+    </p>
+
+    <p>
+      <input type="submit" value="Построить">
+    </p>
+  </form>
+
+  <p>Здесь будет график</p>
 </details>
+
 <details>
 	<summary>Фильтр</summary>
 	<form>
